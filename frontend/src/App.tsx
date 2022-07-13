@@ -1,11 +1,18 @@
-import { Header } from "./components";
+import { Header, SalesCard } from "./components";
 
 function App() {
 
   return (
-    <div>
+    <>
       <Header />
-    </div>
+      <main>
+        <section id="sales">
+          <div className="dsmeta-container">
+            <SalesCard />
+          </div>
+        </section>
+      </main>
+    </>
   );
 }
 
