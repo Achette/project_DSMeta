@@ -73,7 +73,7 @@ export const SalesCard = () => {
                     <td>
                       <div className="dsmeta-red-btn-container">
                         <div className="dsmeta-red-btn">
-                          <NotificationButton />
+                          <NotificationButton id={sale.id}/>
                         </div>
                       </div>
                     </td>
