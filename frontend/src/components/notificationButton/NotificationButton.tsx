@@ -1,4 +1,5 @@
 import axios from "axios";
+import { toast } from "react-toastify";
 import icon from "../../assets/img/notification-icon.png";
 import { BASE_URL } from "../../utils/Request";
 import "./NotificationButton.css";
@@ -11,7 +12,7 @@ export const NotificationButton = ({ id }: TNotificationButtonProps) => {
   const handleClickSubmit = (id: number) => {
     axios
       .get(`${BASE_URL}/sales/${id}/notification`)
-      .then((res) => console.log("Sucesso no envio"));
+      .then((res) => toast.info("SMS enviado com sucesso!"));
   };
 
   return (
